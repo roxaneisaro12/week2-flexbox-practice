@@ -65,9 +65,14 @@ The animation combines three horizontal alignments with three vertical alignment
 
 ### 6. Screenshots
 
-screenshot/top-left.png
-screenshot/centre.png
-screenshot/buttom-right.png
+### Top-left position
+![Top-left position](screenshot/top-left.png)
+
+### Centre position
+![Centre position](screenshot/centre.png)
+
+### Bottom-right position
+![Bottom-right position](screenshot/buttom-right.png)
 
 ### 7. Video Demonstration
 

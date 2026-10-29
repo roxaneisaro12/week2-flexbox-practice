@@ -19,10 +19,7 @@ body {
   align-items: flex-start;
   gap: clamp(4px, 1vw, 12px);
   padding: 12px;
-  animation-name: moveBoxes;
-animation-duration: 27s;
-animation-timing-function: steps(1, end);
-animation-iteration-count: infinite;
+  animation: moveBoxes 27s steps(1, end) infinite;
 }
 
 .box {
@@ -113,36 +110,4 @@ animation-iteration-count: infinite;
     justify-content: flex-start;
     align-items: flex-start;
   }
-}
-/* Extra layout demonstrating flex-wrap and align-content */
-.extra-layout {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 20px;
-  background-color: #ffffff;
-  color: #263238;
-}
-
-.extra-layout h2 {
-  font-size: 24px;
-}
-
-.extra-layout p {
-  line-height: 1.5;
-}
-
-.wrap-demo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: flex-start;
-  gap: 12px;
-  width: 320px;
-  max-width: 100%;
-  height: 240px;
-  padding: 12px;
-  border: 2px dashed #64748b;
-  border-radius: 12px;
 }
