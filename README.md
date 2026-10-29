@@ -80,7 +80,7 @@ Video link: TO BE ADDED
 
 ### 8. GitHub Repository
 
-Repository link: TO BE ADDED
+Repository link: https://github.com/roxaneisaro12/week2-flexbox-practice.git
 
 ## What I Learned
 
