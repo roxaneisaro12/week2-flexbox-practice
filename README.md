@@ -2,33 +2,56 @@
 
 ## Project Overview
 
-This project demonstrates how CSS Flexbox positions six colored boxes inside a full-screen container. The boxes move repeatedly through nine positions using CSS animations without JavaScript.
+This project demonstrates how CSS Flexbox positions six colored, numbered boxes inside a full-screen container. The boxes move repeatedly through nine positions using CSS animations without JavaScript.
 
 ## Technologies Used
 
-- HTML5 for the page structure.
-- CSS3 for styling, Flexbox layout, and animation.
+- **HTML5:** Creates the page structure and six numbered boxes.
+- **CSS3:** Styles the boxes, controls the Flexbox layout, and animates their positions.
+- **Git and GitHub:** Track changes and share the project.
 
 ## How the Code Works
 
-### 1. Flex Container
+### 1. HTML Structure
 
-The `.flex-container` uses `display: flex` to arrange the boxes along the main axis. Its `height: 100vh` and `width: 100%` make it fill the viewport.
+The HTML contains a main Flexbox container with six boxes numbered 1 through 6. Each box has a CSS class that controls its appearance.
 
-### 2. Flexbox Properties
+### 2. Flexbox Container
 
-- `justify-content`: positions the boxes horizontally.
-- `align-items`: positions the boxes vertically.
-- `gap`: adds spacing between boxes.
-- `flex-shrink: 0`: prevents the boxes from shrinking below their specified size.
+The `.flex-container` uses `display: flex` to arrange the boxes along the main axis.
 
-### 3. CSS Animation
+- `width: 100%` makes the container fill the available width.
+- `height: 100vh` makes it as tall as the browser viewport.
+- `justify-content` controls horizontal distribution.
+- `align-items` controls vertical alignment.
+- `gap` creates space between boxes.
+- `padding` adds space between the container's edges and the boxes.
 
-The `@keyframes moveBoxes` rule changes `justify-content` and `align-items` at different percentages. The animation repeats indefinitely using `infinite`.
+### 3. Other Flexbox Properties
 
-### 4. The Nine Positions
+- `flex-direction` controls the direction in which flex items are arranged.
+- `flex-wrap` controls whether items can wrap onto another line.
+- `align-content` controls the spacing of multiple flex lines when wrapping occurs.
+- `flex-shrink: 0` prevents boxes from shrinking below their specified size.
 
-| Position | justify-content | align-items |
+These properties have different effects. The animation primarily uses `justify-content` and `align-items` to move the boxes through the nine positions.
+
+### 4. CSS Animation
+
+The `@keyframes moveBoxes` rule defines how the layout changes over time.
+
+- `animation-name` selects the keyframes to run.
+- `animation-duration: 27s` sets the animation cycle to 27 seconds.
+- `animation-timing-function: steps(1, end)` switches between defined layouts in distinct steps.
+- `animation-iteration-count: infinite` repeats the animation continuously.
+
+The animation changes `justify-content` and `align-items` without using JavaScript.
+
+### 5. The Nine Positions
+
+The animation combines three horizontal alignments with three vertical alignments to create nine positions.
+
+| Position | `justify-content` | `align-items` |
 |---|---|---|
 | Top Left | `flex-start` | `flex-start` |
 | Top Center | `center` | `flex-start` |
@@ -40,18 +63,20 @@ The `@keyframes moveBoxes` rule changes `justify-content` and `align-items` at d
 | Bottom Center | `center` | `flex-end` |
 | Bottom Right | `flex-end` | `flex-end` |
 
-## Screenshots
+### 6. Screenshots
 
-Add screenshots of the running animation here. Capture different positions to demonstrate the nine-position layout.
+screenshot/top-left.png
+screenshot/centre.png
+screenshot/buttom-right.png
 
-## Video Demonstration
+### 7. Video Demonstration
 
 Video link: TO BE ADDED
 
-## GitHub Repository
+### 8. GitHub Repository
 
 Repository link: TO BE ADDED
 
 ## What I Learned
 
-I learned how Flexbox uses `justify-content` and `align-items` to position elements horizontally and vertically. I also practiced CSS keyframes and infinite animations to move elements through different layouts without JavaScript.
+I learned how Flexbox arranges elements horizontally and vertically, how `justify-content` and `align-items` work together, and how CSS keyframes can animate layouts repeatedly without JavaScript. I also practiced documenting code and tracking project changes with Git.
