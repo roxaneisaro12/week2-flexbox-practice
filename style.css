@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,30 +9,31 @@ body {
   background: #f4f6fb;
 }
 
+/* Main area for the animated boxes */
 .flex-container {
   width: 100%;
   height: 100vh;
-  min-height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: clamp(4px, 1vw, 12px);
-  padding: 12px;
+  gap: 6px;
+  padding: 8px;
   animation: moveBoxes 27s steps(1, end) infinite;
 }
 
+/* Small numbered boxes */
 .box {
-  width: clamp(42px, 7vw, 84px);
-  height: clamp(42px, 7vw, 84px);
+  width: 38px;
+  height: 38px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
+  border-radius: 7px;
   color: white;
-  font-size: clamp(16px, 2vw, 26px);
+  font-size: 12px;
   font-weight: bold;
-  box-shadow: 0 5px 12px rgb(0 0 0 / 12%);
+  box-shadow: 0 3px 8px rgb(0 0 0 / 12%);
 }
 
 .box-1 {
@@ -53,13 +53,14 @@ body {
 }
 
 .box-5 {
-  background-color: #f39c12;
+  background-color: #d68910;
 }
 
 .box-6 {
   background-color: #16a085;
 }
 
+/* Nine animated positions */
 @keyframes moveBoxes {
   0% {
     justify-content: flex-start;
@@ -110,4 +111,44 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
   }
+}
+
+/* Extra Flex Wrap demonstration */
+.extra-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  background: white;
+  color: #263238;
+}
+
+.extra-layout h2 {
+  font-size: 20px;
+}
+
+.extra-layout p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.wrap-demo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 280px;
+  max-width: 100%;
+  height: 130px;
+  padding: 10px;
+  border: 2px dashed #64748b;
+  border-radius: 10px;
+}
+
+.wrap-demo .box {
+  width: 32px;
+  height: 32px;
+  font-size: 10px;
 }
