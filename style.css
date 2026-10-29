@@ -19,7 +19,10 @@ body {
   align-items: flex-start;
   gap: clamp(4px, 1vw, 12px);
   padding: 12px;
-  animation: moveBoxes 27s steps(1, end) infinite;
+  animation-name: moveBoxes;
+animation-duration: 27s;
+animation-timing-function: steps(1, end);
+animation-iteration-count: infinite;
 }
 
 .box {
